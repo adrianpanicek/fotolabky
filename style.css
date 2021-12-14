@@ -83,6 +83,11 @@ div#social > a {
     height: 100%;
 }
 
-div#social img {
+div#social img.instagram {
     height: 100%;
+    transition: transform 0.1s;
+}
+
+div#social img.instagram:hover {
+    transform: scale(1.05);
 }
