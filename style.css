@@ -10,12 +10,19 @@
 body {
     background: url(img/bg.webp) no-repeat;
     background-size: cover;
-    background-position: center auto;
+    background-position: center top;
 
     font-size: 1.2em;
     font-family: "Open Sans", Arial;
 
     color: #492a0e;
+}
+
+@media screen and (max-height: 1080px) {
+    body {
+        background-size: auto 120vh;
+        background-position: center -20vh;
+    }
 }
 
 @media screen and (max-aspect-ratio: 16/9) {
