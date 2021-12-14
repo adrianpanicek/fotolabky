@@ -1,0 +1,81 @@
+@font-face {
+    font-family: "Open Sans";
+    src: url(font/OpenSans.ttf);
+}
+
+* {
+    margin: 0;
+}
+
+body {
+    background: url(img/bg.webp) no-repeat;
+    background-size: cover;
+    background-position: center auto;
+
+    font-size: 1.2em;
+    font-family: "Open Sans", Arial;
+
+    color: #492a0e;
+}
+
+@media screen and (max-aspect-ratio: 16/9) {
+    body {
+        background-size: auto 100vh;
+        background-position: center top;
+    }
+}
+
+div#logo {
+    position: absolute;
+    top: 3em;
+    width: 100%;
+    height: 150px;
+    text-align: center;
+}
+
+div#logo > img {
+    position: relative;
+    height: 100%;
+    display: inline-block;
+}
+
+div#contact {
+    position: absolute;
+    bottom: 5em;
+    height: 10vh;
+    width: 100%;
+    text-align: center;
+}
+
+div#contact span {
+    position: relative;
+    display: inline-block;
+    white-space: nowrap;
+    padding: 0 0.5em;
+}
+
+div#social {
+    position: absolute;
+    bottom: 3em;
+    height: 3em;
+    width: 100%;
+    text-align: center;
+}
+
+@media screen and (max-aspect-ratio: 16/9) {
+    div#social  {
+        background-size: auto 100vh;
+        background-position: center top;
+    }
+}
+
+
+div#social > a {
+    position: relative;
+    display: inline-block;
+    height: 100%;
+}
+
+div#social img {
+    height: 100%;
+}
